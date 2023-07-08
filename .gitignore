@@ -1,0 +1,5 @@
+# ignore m4a files inthe root directory
+*.m4a
+*.mp3
+m4a_data/
+uninstall-pip.txt
