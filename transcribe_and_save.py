@@ -18,9 +18,11 @@ def transcribe_and_save_text(input_path, output_path, model_name="module", langu
     with open(output_path, 'w', encoding='utf-8') as file:
         file.write(str(result["text"]))
 
-# mp3_dataディレクトリ内のファイルを処理
-input_dir = "m4a_data/230705_NA2/"
-output_dir = "transcriptions/230705_NA2"
+# mp4_dataディレクトリ内のファイルを処理
+#input_dir = "m4a_data/path-to-mp4/"
+input_dir = "./m4a_data/sample/"
+#output_dir = "transcriptions/path-to-output/"
+output_dir = "./transcription/sample/"
 
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
