@@ -1,3 +1,4 @@
+# Normal user cannot use api by openai
 import openai
 
 openai.organization = "org-fTcnhNYzMeXa8Kl8lhg6W7nm"
