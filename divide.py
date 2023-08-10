@@ -21,7 +21,7 @@ def split_mp3(file_path, chunk_size):
         print(f'{chunk_counter} files created.')
 
 # ファイルパスとチャンクサイズを指定して実行する例
-file_path = 'mp3_data/230627_office-hours.mp3'  # 分割したいMP3ファイルのパス
-chunk_size = 25 * 1024 * 1024  # 25MBをバイト単位で指定
+file_path = 'mp3_data/path-to-file.mp3'  # 分割したいMP3ファイルのパス
+chunk_size = 24 * 1024 * 1024  # 25MBをバイト単位で指定
 
 split_mp3(file_path, chunk_size)
