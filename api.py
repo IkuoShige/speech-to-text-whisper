@@ -1,8 +1,8 @@
 # Normal user cannot use api by openai
 import openai
 
-openai.organization = "org-fTcnhNYzMeXa8Kl8lhg6W7nm"
-openai.api_key = "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"
+openai.organization = "ORGANIZATION_ID"
+openai.api_key = "OPENAI_API_KEY"
 
 def speech_to_text(filepath):
     audio_file = open(filepath, "rb")
