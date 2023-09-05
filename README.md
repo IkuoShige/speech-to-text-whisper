@@ -68,6 +68,9 @@ speech-to-text-whisper
 
 OpenAIの重み(small, middle, large)を選択し、音声データから文字起こしを行う
 
+- GPUを積んでいないPCではsmallが推奨
+    - テスト環境: Geforce RTX 3060 12GB
+
 * `input_dir`にm4aデータが配置されているディレクトリのパスを設定
 * `output_dir`に文字起こしした内容を書き込むディレクトリのパスを設定
 
