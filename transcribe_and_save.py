@@ -4,7 +4,7 @@ import time
 
 def transcribe_and_save_text(input_path, output_path, model_name="module", language='ja'):
     ## モデル（データセット）読み込み
-    model = whisper.load_model("large")
+    model = whisper.load_model("large-v3")
  
     ## 音声へのパス
     #path ="test.m4a"
@@ -19,10 +19,10 @@ def transcribe_and_save_text(input_path, output_path, model_name="module", langu
         file.write(str(result["text"]))
 
 # mp4_dataディレクトリ内のファイルを処理
-#input_dir = "m4a_data/path-to-mp4/"
-input_dir = "./m4a_data/sample/"
-#output_dir = "transcriptions/path-to-output/"
-output_dir = "./transcription/sample/"
+input_dir = "m4a_data/250312_office-hour/"
+#input_dir = "./m4a_data/sample/"
+output_dir = "output/250312_office-hour/"
+#output_dir = "./transcription/sample/"
 
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)

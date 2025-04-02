@@ -4,3 +4,5 @@
 m4a_data/
 uninstall-pip.txt
 transcriptions/
+output/
+__pycache__/
